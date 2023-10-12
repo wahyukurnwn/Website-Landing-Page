@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar{
+    padding: 2rem 9%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+}
+
+
+.navbar-brand{
+    font-size: 3rem;
+    font-family: 'Viga';
+    font-weight:600;
+    cursor: default;
+}
+
+a.nav-link{
+    font-size: 1.6rem;
+    font-weight: 3rem;
+    /* margin-left: 4rem; */
+    
+}
+
+
+/* Jumbotron */
+.home{
+    background: goldenrod;
+}
+
+.home .jumbotron{
+    background-image: url(img/background-jumbotron.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+}
+
+.home .jumbotron::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.home .jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+
+
+.home .jumbotron .container .header{
+    justify-content: center;
+    padding-top: 5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.home .jumbotron  .container h6{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.home .jumbotron  .container .display-4{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.jumbotron  .container h6,
+.jumbotron  .container .display-4{
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* thumbs-box */
+.thumbs-box{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+    margin-bottom: 1.7rem;
+}
+
+.thumbs-box-1,
+.thumbs-box-2,
+.thumbs-box-3{
+    /* background: red; */
+    padding: 2rem;
+}
+
+
+.thumbs-box-1 i,
+.thumbs-box-2 i,
+.thumbs-box-3 i{
+    font-size: 2.8rem;
+    border: .25rem solid white;
+    border-radius: 50%;
+    padding: .8rem;
+    margin-bottom: 2rem;
+    background: #336b87;
+}
+
+.thumbs-box-1 p,
+.thumbs-box-2 p,
+.thumbs-box-3 p{
+    font-size: 1.6rem;
+}
+
+.box-tombol{
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.box-tombol a{
+    background: #336b87;
+    font-size: 1.8rem;
+    color: white;
+    padding: 1rem;
+}
+
+/* Panel Form-Reservasi */
+.form-reservasi form{
+   text-align: center;
+}
+
+.form-reservasi form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-reservasi form .input-box input{
+    width: 32%;
+    padding: .5rem;
+    font-size: 1.6rem;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.info-panel{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #586680;
+}
+
+
+/* About */
+
+.about{
+    background: violet;
+}
+
+.about .about-container{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 128rem;
+    background: #ddd;
+    gap: 5rem;
+}
+
+.about-img{
+ 
+    background: rgb(47, 179, 255);
+    width: 36.797%;
+    min-height: .1rem;
+    display: flex;
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+}
+
+/* about-content */
+.about-content{
+    display: flex;
+    flex-direction: column;
+    background: rgb(7, 235, 166);
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+}
+
+.about-heading{
+    margin-bottom:1.5rem;
+}
+
+.about-heading h5{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.about-heading h2{
+    font-size: 4.3rem;
+    font-weight: 700;
+}
+
+
+.about-info{
+    margin-bottom: 1.6rem;
+}
+
+.about-info p{
+    font-size: 1.65rem;
+    margin-bottom: 1.5rem;
+    line-height: 2.4rem;
+}
+
+.about-info p span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* info-card */
+.info-card{
+    display: flex;
+    gap: 1.6rem;
+    background: wheat;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.info-icons{
+    background: crimson;
+    padding: .3rem;
+}
+
+.info-icons i{
+    margin-top: 50%;
+    font-size: 3.3rem;
+}
+
+.info-content{
+    padding: .5rem;
+    background: rgb(238, 122, 39);
+}
+
+.info-content h4{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+.info-content p{
+    font-size: 1.6rem;
+}
+
+/* Responsive Breakpoints */
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    /* Navbar */
+    .navbar-brand,
+    a.nav-link{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+
+    a.nav-link{
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-left: 4rem;
+        
+    }
+
+    /* Jumbotron */
+    .home .jumbotron{
+        background-position: 0 -16rem;
+        background-repeat: no-repeat;
+        height: 85rem;
+        margin-top: -10.2rem;
+    }
+    .home .jumbotron .container .header{
+        padding-top: 15rem;
+        margin-bottom: 3rem;
+    }
+
+    .home .jumbotron  .container h6{
+        
+        font-size: 1.4rem;
+    }
+    
+    .home .jumbotron  .container .display-4{
+        
+        font-size: 6rem;
+    }
+    /* thumbs-box */
+    .thumbs-box{
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .thumbs-box-1,
+    .thumbs-box-2,
+    .thumbs-box-3{
+        padding: 2rem;
+    }
+
+
+    .thumbs-box-1 i,
+    .thumbs-box-2 i,
+    .thumbs-box-3 i{
+        font-size: 5rem;
+        border: .25rem solid white;
+        border-radius: 50%;
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+        background: #336b87;
+    }
+
+    .thumbs-box-1 p,
+    .thumbs-box-2 p,
+    .thumbs-box-3 p{
+        font-size: 1.8rem;
+    }
+
+    .box-tombol a{
+        font-size: 2rem;
+    }
+       
+}
+
+@media (min-width: 1200px) { 
+    /* Jumbotron */
+    .home .jumbotron{
+        background-position: 0 -16rem;
+        background-repeat: no-repeat;
+        height: 62rem;
+        margin-top: -10.2rem;
+    }
+ }
+
+
+
+/* Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991.98px) { 
+    /* Jumbotron */
+    .home .jumbotron{
+    height: 41rem;
+    }
+
+    /* thumbs-box */
+.thumbs-box{
+    gap: .25rem;
+}
+ } 
+
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 415px). Default setting sendiri */
+@media (max-width: 575.98px) {
+
+    .home .jumbotron{
+        height: 68rem;
+    }
+
+
+     .home .jumbotron .container .header{
+         padding-top: 7rem;
+         margin-bottom: 1rem;
+        }
+        
+        .home .jumbotron  .container h6{
+            font-size: 1.4rem;
+    }
+    
+    .home .jumbotron  .container .display-4{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    
+    /* Form Reservasi */
+    .form-reservasi form .input-box input{
+        width: 100%;
+        
+    }
+
+
+    /* About */
+    /* .about .about-container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 57.598rem;
+        gap: 1rem;
+    } */
+}
